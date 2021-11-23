@@ -2,21 +2,25 @@
 // This app creates random messages and it is part of my Full-stack engineer learning path at Codecademy.
 
 // Creating arrays with the elements of the phrase to be generated
-const subjectArray = ['A1', 'A2', 'A3'];
-const verbArray = ['B1', 'B2', 'B3', 'B4'];
-const adjectiveArray = ['C1', 'C2', 'C3', 'C4'];
-const confirmationArray = [`D1`, `D2`, `D3`]
+const strArray1 = ['Your day is going to be', 'Your future seems to be', 'The life looks', 'Your energy seems'];
+const strArray2 = ['amazing', 'wonderful', 'brilliant', 'great', 'fantastic'];
+const strArray3 = ['promissing', 'fortunate', 'full of surprises', 'full of friends'];
+const strArray4 = ['Smiling', 'Laughing', 'Socilalizing', 'Making connections', 'Playing', 'Engaging in causes you believe' ]
+const strArray5 = ['will make you', 'will turn your day', 'will make your life even' ]
+const strArray6 = ['happier', 'shiner', 'brighter', 'warmer', 'stronger']
 
 // Function that generates random phrases based on the content of the declared arrays
-let newPhrase = (subjectInput, verbInput, adjectiveInput, confirmationInput) => {
-    const subjectTemp = subjectInput[Math.floor(Math.random() * (subjectInput.length))];
-    const verbTemp = verbInput[Math.floor(Math.random() * (verbInput.length))];
-    const adjectiveTemp = adjectiveInput[Math.floor(Math.random() * (adjectiveInput.length))];
-    const confirmationTemp = confirmationInput[Math.floor(Math.random() * (confirmationInput.length))];
-
-    let phraseTemp = `${subjectTemp} ${verbTemp} ${adjectiveTemp} ${confirmationTemp}`;
+let newPhrase = (strInput1, strInput2, strInput3, strInput4, strInput5, strInput6) => {
+    const strTemp1 = strInput1[Math.floor(Math.random() * (strInput1.length))];
+    const strTemp2 = strInput2[Math.floor(Math.random() * (strInput2.length))];
+    const strTemp3 = strInput3[Math.floor(Math.random() * (strInput3.length))];
+    const strTemp4 = strInput4[Math.floor(Math.random() * (strInput4.length))];
+    const strTemp5 = strInput5[Math.floor(Math.random() * (strInput5.length))];
+    const strTemp6 = strInput6[Math.floor(Math.random() * (strInput6.length))];
+   
+    let phraseTemp = `${strTemp1} ${strTemp2} and ${strTemp3}! ${strTemp4} ${strTemp5} ${strTemp6}!`;
     return phraseTemp
 }
 
 // Calling the function that generates a new phrase
-console.log(newPhrase(subjectArray, verbArray, adjectiveArray, confirmationArray))
+console.log(newPhrase(strArray1, strArray2, strArray3, strArray4, strArray5, strArray6))
