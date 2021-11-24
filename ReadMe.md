@@ -12,7 +12,7 @@
 - JavaScript | Git
 
 ## Screenshots
-![Result screenshot](./img/screenshot.png)
+![Result screenshot](img/screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
